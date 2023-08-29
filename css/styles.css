@@ -1,0 +1,61 @@
+:root {
+  --c-brand: #fd9222;
+  --c-primery: #111;
+  --c-primery-light: #fff;
+  --c-background: #1e1823;
+  --c-background-light: #fafafa;
+}
+
+.logo {
+  color: var(--c-primery);
+}
+
+.nav-link {
+  color: var(--c-primery);
+}
+
+.nav-link:hover {
+  color: var(--c-brand);
+}
+
+.hero-section {
+  background-color: var(--c-background);
+}
+
+.hero-title {
+  color: var(--c-primery-light);
+}
+
+.button-primery {
+  color: var(--c-primery-light);
+  background-color: var(--c-brand);
+  border: none;
+  cursor: pointer;
+  border-radius: 100px;
+  padding: 14px 40px;
+}
+
+.button-primery:hover {
+  color: var(--c-brand);
+  background-color: var(--c-background);
+}
+
+.button-secondary {
+  color: var(--c-primery-light);
+  border: 1px solid 40px;
+  padding: 14px 40px;
+  border-radius: 100px;
+}
+
+.button-secondary:hover {
+  color: var(--c-brand);
+  border: 1px solid 40px;
+}
+
+.hero-scroll {
+  color: var(--c-primery-light);
+}
+
+.hero-scroll:hover {
+  color: var(--c-brand);
+}

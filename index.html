@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simply Chocolate</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Хедер -->
@@ -11,86 +12,60 @@
       <!-- Панель навигации хедера -->
       <nav>
         <!-- Логотип -->
-        <a href="./index.html"
+        <a class="logo" href="./index.html"
           >Simply Chocolate
-          <img
-            src="./images/icons/chocolate-logo.png"
-            alt="Simply Chocolate logo"
-            width="24"
-          />
+          <img src="./images/icons/chocolate-logo.png" alt="Simply Chocolate logo" width="24" />
         </a>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">How it’s made?</a></li>
-          <li><a href="#">Our products</a></li>
-          <li><a href="#">Top sellers</a></li>
-          <li><a href="#">Chocolate is loved</a></li>
+          <li><a class="nav-link" href="#">How it’s made?</a></li>
+          <li><a class="nav-link" href="#">Home</a></li>
+          <li><a class="nav-link" href="#">Our products</a></li>
+          <li><a class="nav-link" href="#">Top sellers</a></li>
+          <li><a class="nav-link" href="#">Chocolate is loved</a></li>
         </ul>
       </nav>
       <!-- Ссылки на соц.сети -->
       <a href="#"
-        >Instagram
-        <img
-          src="./images/icons/instagram-logo.png"
-          alt="Instagram Logo"
-          width="24"
+        >Instagram <img src="./images/icons/instagram-logo.png" alt="Instagram Logo" width="24"
       /></a>
       <a href="#"
-        >Twitter
-        <img
-          src="./images/icons/twitter-logo.png"
-          alt="Twitter Logo"
-          width="24"
+        >Twitter <img src="./images/icons/twitter-logo.png" alt="Twitter Logo" width="24"
       /></a>
     </header>
     <!-- Уникальный контент страницы -->
     <main>
       <!-- Секция 1 -->
-      <section>
-        <h1>
-          Treat yourself or a loved one to our finest ingredients for a moment
-          of pure delight!
+      <section class="hero-section">
+        <h1 class="hero-title">
+          Treat yourself or a loved one to our finest ingredients for a moment of pure delight!
         </h1>
-        <button type="button">Buy now</button>
-        <a href="#">How it’s made</a>
-        <a href="#"
-          >scroll down<img
-            src="./images/icons/scroll-down.png"
-            alt="Scroll down"
-            width="22"
+        <button class="button-primery" type="button">Buy now</button>
+        <a class="button-secondary" href="#">How it’s made</a>
+        <a class="hero-scroll" href="#"
+          >scroll down<img src="./images/icons/scroll-down.png" alt="Scroll down" width="22"
         /></a>
-        <img
-          src="./images/chocolate-main-pic.jpg"
-          alt="Chocolate main picture"
-          width="1136"
-        />
+        <!-- <img src="./images/chocolate-main-pic.jpg" alt="Chocolate main picture" width="1136" /> -->
       </section>
       <!-- Секция 2 -->
       <section>
         <h2>Our adventages</h2>
         <ul>
           <li>
-            <img
-              src="./images/icons/chocolate-bar.png"
-              alt="Chocolate"
-              width="32"
-            />
+            <img src="./images/icons/chocolate-bar.png" alt="Chocolate" width="32" />
             <h3>Unsurpassed taste</h3>
             <p>
-              Crafted with the finest quality cocoa beans and a dedication to
-              perfection, each bite is a decadent experience that simply cannot
-              be matched. Savor the richness and complexity of our Unsurpassed
-              Taste and discover a new level of chocolate bliss.
+              Crafted with the finest quality cocoa beans and a dedication to perfection, each bite
+              is a decadent experience that simply cannot be matched. Savor the richness and
+              complexity of our Unsurpassed Taste and discover a new level of chocolate bliss.
             </p>
           </li>
           <li>
             <img src="./images/icons/coint-logo.png" alt="Coint" width="32" />
             <h3>Affordable price</h3>
             <p>
-              Indulge in high-quality chocolate without breaking the bank with
-              Simply Chocolate's selection of affordable treats. Enjoy
-              mouth-watering truffles and velvety chocolate bars without
-              sacrificing taste or quality. Browse our selection and indulge in
+              Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's
+              selection of affordable treats. Enjoy mouth-watering truffles and velvety chocolate
+              bars without sacrificing taste or quality. Browse our selection and indulge in
               affordable luxury today.
             </p>
           </li>
@@ -98,10 +73,9 @@
             <img src="./images/icons/spoon-logo.png" alt="Spoon" width="32" />
             <h3>Own production</h3>
             <p>
-              We take pride in our own production process, ensuring that every
-              step is carefully crafted to perfection. From selecting the finest
-              ingredients to handcrafting each piece, our attention to detail is
-              evident in every bite.
+              We take pride in our own production process, ensuring that every step is carefully
+              crafted to perfection. From selecting the finest ingredients to handcrafting each
+              piece, our attention to detail is evident in every bite.
             </p>
           </li>
         </ul>
@@ -110,10 +84,9 @@
       <section>
         <h2>It all adds up to one exceptional <span>taste</span> sensation</h2>
         <p>
-          At Simply Chocolate, we believe that the secret to exceptional
-          chocolate is in the details. From the sourcing of the finest
-          ingredients to the careful crafting of each individual piece, every
-          step of our process adds up to one exceptional taste sensation.
+          At Simply Chocolate, we believe that the secret to exceptional chocolate is in the
+          details. From the sourcing of the finest ingredients to the careful crafting of each
+          individual piece, every step of our process adds up to one exceptional taste sensation.
         </p>
         <ul>
           <li>
@@ -133,11 +106,7 @@
             <h3>Nuts</h3>
           </li>
           <li>
-            <img
-              src="./images/ingredients/coffee-beans.png"
-              alt="Coffee beans"
-              width="206"
-            />
+            <img src="./images/ingredients/coffee-beans.png" alt="Coffee beans" width="206" />
             <h3>Semi - sweet chocolate</h3>
           </li>
         </ul>
@@ -145,33 +114,24 @@
       <!-- Секция 4 -->
       <section>
         <h2>How it’s <span>made?</span></h2>
-        <img
-          src="./images/made-pic.jpg"
-          alt="Liquid chocolate in a bowl"
-          width="600"
-        />
+        <img src="./images/made-pic.jpg" alt="Liquid chocolate in a bowl" width="600" />
         <button type="button">
           <img src="./images/icons/play-logo.png" alt="Play" width="44" />
         </button>
-        <p>
-          Try our chocolates today and discover the perfect balance of flavor
-        </p>
+        <p>Try our chocolates today and discover the perfect balance of flavor</p>
         <ul>
           <li>
-            Heat the milk in a saucepan without bringing it to a boil. Add sugar
-            and cocoa powder.
+            Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.
           </li>
+          <li>At the same time, prepare a water bath. Melt the butter on it.</li>
           <li>
-            At the same time, prepare a water bath. Melt the butter on it.
-          </li>
-          <li>
-            "Mix" the milk mixture and already liquid butter. Mix thoroughly
-            with a silicone spatula so that the mass becomes uniform and silky.
+            "Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula
+            so that the mass becomes uniform and silky.
           </li>
           <li>Heat the mixture over low heat, letting it barely boil.</li>
           <li>
-            Pour the chocolate into special containers (can be replaced with ice
-            molds). Allow to cool and harden.
+            Pour the chocolate into special containers (can be replaced with ice molds). Allow to
+            cool and harden.
           </li>
         </ul>
       </section>
@@ -180,11 +140,7 @@
         <h2>Our <span>products</span></h2>
         <ul>
           <li>
-            <img
-              src="./images/products/orange.jpg"
-              alt="Orange Chocolate"
-              width="230"
-            />
+            <img src="./images/products/orange.jpg" alt="Orange Chocolate" width="230" />
             <h3>Orange</h3>
             <p>Dark chocolate</p>
             <button type="button">45 UAH</button>
@@ -210,11 +166,7 @@
             <button type="button">66 UAH</button>
           </li>
           <li>
-            <img
-              src="./images/products/pineapple.jpg"
-              alt="Pineapple Chocolate"
-              width="230"
-            />
+            <img src="./images/products/pineapple.jpg" alt="Pineapple Chocolate" width="230" />
             <h3>Pineapple</h3>
             <p>Dark chocolate</p>
             <button type="button">54 UAH</button>
@@ -230,11 +182,7 @@
             <button type="button">45 UAH</button>
           </li>
           <li>
-            <img
-              src="./images/products/honey.jpg"
-              alt="Honey Chocolate"
-              width="230"
-            />
+            <img src="./images/products/honey.jpg" alt="Honey Chocolate" width="230" />
             <h3>Honey</h3>
             <p>Milk chocolate</p>
             <button type="button">50 UAH</button>
@@ -270,9 +218,9 @@
           <li><img src="./images/img03.jpg" alt="img03" width="368" /></li>
         </ul>
         <p>
-          Crazy enough chocolate originates from a bean just like the coffee
-          bean called Cacao. Cacao has been around for thousands of years and
-          was first discovered by the Native American tribe called the Mayans.
+          Crazy enough chocolate originates from a bean just like the coffee bean called Cacao.
+          Cacao has been around for thousands of years and was first discovered by the Native
+          American tribe called the Mayans.
         </p>
         <button type="button">Buy now</button>
       </section>
@@ -281,79 +229,51 @@
         <h2><span>Chocolate </span>is loved</h2>
         <ul>
           <li>
-            <img
-              src="./images/people/victoria.jpg"
-              alt="Victoria Dobrzhanska"
-              width="80"
-            />
+            <img src="./images/people/victoria.jpg" alt="Victoria Dobrzhanska" width="80" />
             <h3>Victoria Dobrzhanska</h3>
             <p>
-              I love this chocolate bar. Perfect combination of light crispy
-              wafer, covered in a thin layer chocolate.
+              I love this chocolate bar. Perfect combination of light crispy wafer, covered in a
+              thin layer chocolate.
             </p>
           </li>
           <li>
-            <img
-              src="./images/people/nazar.jpg"
-              alt="Nazar BabenkoNazar Babenko"
-              width="80"
-            />
+            <img src="./images/people/nazar.jpg" alt="Nazar BabenkoNazar Babenko" width="80" />
             <h3>Nazar Babenko</h3>
             <p>
-              This chocolate confection is a delight! A delight! The wafer is
-              light and crisp, the hazelnut cream is smooth, and the chocolate
-              is good.
+              This chocolate confection is a delight! A delight! The wafer is light and crisp, the
+              hazelnut cream is smooth, and the chocolate is good.
             </p>
           </li>
           <li>
-            <img
-              src="./images/people/olena.jpg"
-              alt="Olena Kampusch"
-              width="80"
-            />
+            <img src="./images/people/olena.jpg" alt="Olena Kampusch" width="80" />
             <h3>Olena Kampusch</h3>
             <p>
-              Chocolate is a family favourite treat. Love the delicious smooth
-              chocolate and the creaminess inside. The wafer is soft but
-              crunchy.
+              Chocolate is a family favourite treat. Love the delicious smooth chocolate and the
+              creaminess inside. The wafer is soft but crunchy.
             </p>
           </li>
           <li>
-            <img
-              src="./images/people/natalia.jpg"
-              alt="Natalia Sus"
-              width="80"
-            />
+            <img src="./images/people/natalia.jpg" alt="Natalia Sus" width="80" />
             <h3>Natalia Sus</h3>
             <p>
-              The chocolate assortment was delicious. Both dark and milk
-              chocolate pieces were smooth and just right on the sweetness
-              level.
+              The chocolate assortment was delicious. Both dark and milk chocolate pieces were
+              smooth and just right on the sweetness level.
             </p>
           </li>
           <li>
-            <img
-              src="./images/people/danilo.jpg"
-              alt="Danilo Nottingham"
-              width="80"
-            />
+            <img src="./images/people/danilo.jpg" alt="Danilo Nottingham" width="80" />
             <h3>Danilo Nottingham</h3>
             <p>
-              This is delicious. It so rich and flavorful you don’t need to use
-              as many. I love topping an apple with almond butter and these
-              chips for a snack.
+              This is delicious. It so rich and flavorful you don’t need to use as many. I love
+              topping an apple with almond butter and these chips for a snack.
             </p>
           </li>
           <li>
-            <img
-              src="./images/people/irina.jpg"
-              alt="Irina Tydnyuk"
-              width="80"
-            />
+            <img src="./images/people/irina.jpg" alt="Irina Tydnyuk" width="80" />
             <h3>Irina Tydnyuk</h3>
             <p>
-              This is simply the best chocolate around, and I'm just thrilled to
-              support a local company! Best local chocolate - world class :)
+              This is simply the best chocolate around, and I'm just thrilled to support a local
+              company! Best local chocolate - world class :)
             </p>
           </li>
         </ul>
@@ -363,10 +283,9 @@
       <section>
         <h3>Explore our new chocolate first</h3>
         <p>
-          From the velvety texture to the rich and complex flavor, our New
-          Chocolate is a true indulgence that will leave you craving more. Made
-          with only the finest ingredients and handcrafted with the utmost care,
-          each piece is a work of art that is sure to please.
+          From the velvety texture to the rich and complex flavor, our New Chocolate is a true
+          indulgence that will leave you craving more. Made with only the finest ingredients and
+          handcrafted with the utmost care, each piece is a work of art that is sure to please.
         </p>
         <button type="button">Subscribe</button>
         <img src="./images/subcribe.jpg" alt="Subcribe" width="1200" />
@@ -387,18 +306,10 @@
       </address>
       <!-- Ссылки на соц.сети -->
       <a href="#"
-        >Instagram
-        <img
-          src="./images/icons/instagram-logo.png"
-          alt="Instagram Logo"
-          width="24"
+        >Instagram <img src="./images/icons/instagram-logo.png" alt="Instagram Logo" width="24"
       /></a>
       <a href="#"
-        >Twitter
-        <img
-          src="./images/icons/twitter-logo.png"
-          alt="Twitter Logo"
-          width="24"
+        >Twitter <img src="./images/icons/twitter-logo.png" alt="Twitter Logo" width="24"
       /></a>
       <!-- Панель навигации футера -->
       <nav>
