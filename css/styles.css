@@ -11,9 +11,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 1.28;
   letter-spacing: -0.02em;
   color: var(--c-primery);
   background-color: var(--c-background-light);
@@ -26,6 +24,10 @@ ol {
 
 a {
   text-decoration: none;
+}
+
+button {
+  font-family: inherit;
 }
 
 /* Header */
@@ -68,7 +70,6 @@ a {
 }
 
 .button-primery {
-  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   color: var(--c-primery-light);
   background-color: var(--c-brand);
@@ -76,6 +77,7 @@ a {
   cursor: pointer;
   border-radius: 100px;
   padding: 14px 40px;
+  line-height: 1.21;
 }
 
 .button-primery:hover,
@@ -91,6 +93,7 @@ a {
   border: 1px solid var(--c-primery-light);
   cursor: pointer;
   border-radius: 100px;
+  line-height: 1.28;
 }
 
 .button-secondary:hover,
@@ -102,14 +105,14 @@ a {
 
 .hero-scroll {
   font-weight: 500;
-  letter-spacing: 0.03em;
+  line-height: 1.28;
+  letter-spacing: -0.03em;
   color: var(--c-primery-light);
 }
 
 .hero-scroll:hover,
 .hero-scroll:focus {
   color: var(--c-brand);
-  background-color: var(--c-background-light);
 }
 
 /* Section Adventages */
@@ -118,19 +121,28 @@ a {
   background-color: var(--c-background);
 }
 
-.adventages-title {
-  font-size: 24px;
-  font-weight: 500;
-  color: var(--c-primery-light);
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .adventages-list-title {
   font-size: 18px;
   font-weight: 600;
+  line-height: 1.21;
   color: var(--c-primery-light);
 }
 
 .adventages-item-text {
+  line-height: 1.21;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -154,6 +166,7 @@ a {
 
 .taste-list h3 {
   font-weight: 600;
+  line-height: 1.28;
   text-transform: uppercase;
 }
 
@@ -243,6 +256,7 @@ a {
   border: 1px solid rgba(17, 17, 17, 0.1);
   cursor: pointer;
   border-radius: 100px;
+  line-height: 1.28;
 }
 
 /* Section Sellers */
@@ -284,7 +298,6 @@ a {
 }
 
 .button-third {
-  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 600;
   background: var(--c-primery-light);
@@ -292,6 +305,7 @@ a {
   cursor: pointer;
   border-radius: 100px;
   padding: 14px 40px;
+  line-height: 1.28;
 }
 
 .button-third:hover,
@@ -337,10 +351,12 @@ footer {
 .address-text {
   font-weight: 500;
   font-style: normal;
+  line-height: 1.28;
 }
 
 .contacts {
   font-style: normal;
+  line-height: 1.28;
   color: var(--c-primery-light);
 }
 
