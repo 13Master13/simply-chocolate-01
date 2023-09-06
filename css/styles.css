@@ -6,6 +6,12 @@
   --c-background-light: #fafafa;
 }
 
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+} */
+
 /* Body */
 
 body {
@@ -20,6 +26,8 @@ body {
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -28,6 +36,35 @@ a {
 
 button {
   font-family: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.adventages-section,
+.taste-section,
+.made-section,
+.products-section,
+.sellers-section,
+.love-section,
+.acquaintance-section {
+  margin: 64px 100px;
 }
 
 /* Header */
@@ -58,7 +95,11 @@ button {
 /* Section Hero */
 
 .hero-section {
-  background-color: var(--c-background);
+  padding: 380px 0 40px;
+  background-image: url(../images/chocolate-main-pic.jpg);
+  background-size: 1200px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .hero-title {
@@ -67,6 +108,9 @@ button {
   line-height: 1.21;
   letter-spacing: -0.03em;
   color: var(--c-primery-light);
+  margin-bottom: 32px;
+  margin-left: 40px;
+  max-width: 484px;
 }
 
 .button-primery {
@@ -78,6 +122,7 @@ button {
   border-radius: 100px;
   padding: 14px 40px;
   line-height: 1.21;
+  margin-left: 40px;
 }
 
 .button-primery:hover,
@@ -119,6 +164,7 @@ button {
 
 .adventages-section {
   background-color: var(--c-background);
+  padding: 50px 0;
 }
 
 .visually-hidden {
@@ -128,11 +174,23 @@ button {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.adventages-icon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+.adventages-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .adventages-list-title {
@@ -140,11 +198,13 @@ button {
   font-weight: 600;
   line-height: 1.21;
   color: var(--c-primery-light);
+  margin-bottom: 18px;
 }
 
 .adventages-item-text {
   line-height: 1.21;
   color: rgba(255, 255, 255, 0.7);
+  max-width: 308px;
 }
 
 /* Section Taste */
@@ -155,14 +215,32 @@ button {
   line-height: 1.16;
   letter-spacing: -0.03em;
   text-transform: uppercase;
+  text-align: center;
+  max-width: 411px;
+  margin: 0 auto 28px;
 }
 
 .span-title {
   color: var(--c-brand);
 }
 
+.taste-text {
+  text-align: center;
+  max-width: 486px;
+  margin: 0 auto 50px;
+}
+
 .taste-list {
   display: flex;
+  justify-content: space-between;
+}
+
+.taste-list li {
+  padding: 28px 36px 28px 28px;
+}
+
+.taste-list img {
+  margin-bottom: 36px;
 }
 
 .taste-list h3 {
@@ -173,11 +251,8 @@ button {
 
 .taste-item-milk-choco {
   border-radius: 15px;
-  background-color: var(--c-brand);
-}
-
-.taste-item-milk-choco {
   color: var(--c-primery-light);
+  background-color: var(--c-brand);
 }
 
 .taste-item-milk,
@@ -187,15 +262,17 @@ button {
 }
 
 .taste-item-nuts {
+  border-radius: 15px;
+  color: var(--c-primery-light);
   background-color: var(--c-primery);
 }
 
-.taste-item-nuts {
-  border-radius: 15px;
-  color: var(--c-primery-light);
-}
-
 /* Section Made */
+
+.made-section {
+  display: flex;
+  justify-content: center;
+}
 
 .made-title {
   font-size: 24px;
@@ -203,20 +280,34 @@ button {
   line-height: 1.17;
   letter-spacing: -0.03em;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto 50px;
 }
 
 .made-span {
   color: var(--c-brand);
 }
 
+.background-for-button {
+  background-image: url(../images/made-pic.jpg);
+  background-size: 600px 400px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
 .made-text {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.33;
+  margin-bottom: 28px;
 }
 
 .made-list {
   list-style-type: disc;
+}
+
+.made-item {
+  margin-bottom: 24px;
 }
 
 /* Section Products */
@@ -227,6 +318,8 @@ button {
   line-height: 1.17;
   letter-spacing: -0.03em;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto 50px;
 }
 
 .products-span {
@@ -268,6 +361,8 @@ button {
   line-height: 1.17;
   letter-spacing: -0.03em;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto 50px;
 }
 
 .sellers-span {
@@ -282,6 +377,8 @@ button {
   line-height: 1.17;
   letter-spacing: -0.03em;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto 50px;
 }
 
 .love-span {
@@ -316,6 +413,10 @@ button {
 }
 
 /* Section Acquaintance */
+
+.acquaintance-section {
+  background: url(../images/subcribe.jpg);
+}
 
 .acquaintance-title {
   color: var(--c-primery-light);
