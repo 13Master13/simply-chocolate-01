@@ -50,11 +50,14 @@ h6 {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1136px;
   margin: 0 auto;
+  padding: 0 32px;
 }
 
 .adventages-section,
@@ -64,12 +67,34 @@ img {
 .sellers-section,
 .love-section,
 .acquaintance-section {
-  margin: 64px 100px;
+  margin: 32px 100px;
 }
 
 /* Header */
 
+.header {
+  padding-bottom: 8px;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 24px;
+}
+
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  align-items: center;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
@@ -82,14 +107,30 @@ img {
   font-style: italic;
 }
 
-.header-link {
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 24px 0;
   font-weight: 500;
   line-height: 1.14;
   color: var(--c-primery);
 }
 
-.header-link:hover {
+.nav-link:hover {
   color: var(--c-brand);
+}
+
+.header-socials {
+  display: flex;
+  /* align-items: center; */
+  gap: 18px;
 }
 
 /* Section Hero */

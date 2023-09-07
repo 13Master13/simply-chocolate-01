@@ -21,25 +21,31 @@
     <header class="header">
       <div class="container">
         <!-- Панель навигации хедера -->
-        <nav>
-          <!-- Логотип -->
-          <a class="logo" href="./index.html"
-            ><span class="logo-span">Simply</span> Chocolate
-            <img src="./images/icons/chocolate-logo.png" alt="Simply Chocolate logo" width="24" />
-          </a>
-          <ul>
-            <li><a class="header-link" href="#">How it’s made?</a></li>
-            <li><a class="header-link" href="#">Home</a></li>
-            <li><a class="header-link" href="#">Our products</a></li>
-            <li><a class="header-link" href="#">Top sellers</a></li>
-            <li><a class="header-link" href="#">Chocolate is loved</a></li>
-          </ul>
-        </nav>
-        <!-- Ссылки на соц.сети -->
-        <a href="#"
-          ><img src="./images/icons/instagram-logo.png" alt="Instagram Logo" width="24"
-        /></a>
-        <a href="#"><img src="./images/icons/twitter-logo.png" alt="Twitter Logo" width="24" /></a>
+        <div class="header-inner">
+          <nav class="header-nav">
+            <!-- Логотип -->
+            <a class="logo" href="./index.html"
+              ><span class="logo-span">Simply</span> Chocolate
+              <img src="./images/icons/chocolate-logo.png" alt="Simply Chocolate logo" width="24" />
+            </a>
+            <ul class="nav-list">
+              <li><a class="nav-link" href="#">How it’s made?</a></li>
+              <li><a class="nav-link" href="#">Home</a></li>
+              <li><a class="nav-link" href="#">Our products</a></li>
+              <li><a class="nav-link" href="#">Top sellers</a></li>
+              <li><a class="nav-link" href="#">Chocolate is loved</a></li>
+            </ul>
+          </nav>
+          <!-- Ссылки на соц.сети -->
+          <div class="header-socials">
+            <a href="#" target="_blank"
+              ><img src="./images/icons/instagram-logo.png" alt="Instagram Logo" width="24" />
+            </a>
+            <a href="#" target="_blank"
+              ><img src="./images/icons/twitter-logo.png" alt="Twitter Logo" width="24"
+            /></a>
+          </div>
+        </div>
       </div>
     </header>
     <!-- Уникальный контент страницы -->
@@ -47,14 +53,18 @@
       <!-- Секция 1 -->
       <section class="hero-section">
         <div class="container">
-          <h1 class="hero-title">
-            Treat yourself or a loved one to our finest ingredients for a moment of pure delight!
-          </h1>
-          <button class="button-primery" type="button">Buy now</button>
-          <a class="button-secondary" href="#">How it’s made</a>
-          <a class="hero-scroll" href="#"
-            >scroll down<img src="./images/icons/scroll-down.png" alt="Scroll down" width="22"
-          /></a>
+          <div class="hero-inner">
+            <h1 class="hero-title">
+              Treat yourself or a loved one to our finest ingredients for a moment of pure delight!
+            </h1>
+            <div class="hero-action">
+              <button class="button-primery" type="button">Buy now</button>
+              <a class="button-secondary" href="#">How it’s made</a>
+              <a class="hero-scroll" href="#"
+                >scroll down<img src="./images/icons/scroll-down.png" alt="Scroll down" width="22"
+              /></a>
+            </div>
+          </div>
         </div>
       </section>
       <!-- Секция 2 -->
