@@ -55,7 +55,7 @@ img {
 }
 
 .container {
-  max-width: 1136px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 32px;
 }
@@ -129,18 +129,23 @@ img {
 
 .header-socials {
   display: flex;
-  /* align-items: center; */
   gap: 18px;
 }
 
 /* Section Hero */
 
 .hero-section {
-  padding: 380px 0 40px;
-  background-image: url(../images/chocolate-main-pic.jpg);
-  background-size: 1200px;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  padding-bottom: 72px;
+}
+
+.hero-inner {
+  padding: 380px 40px 40px;
+  border-radius: 30px;
+  background-color: var(--c-background);
+  /* background-image: url(../images/chocolate-main-pic.jpg); */
+  /* background-size: 1136px; */
+  /* background-repeat: no-repeat; */
+  /* background-position: 50% 50%; */
 }
 
 .hero-title {
@@ -152,6 +157,12 @@ img {
   margin-bottom: 32px;
   margin-left: 40px;
   max-width: 484px;
+}
+
+.hero-action {
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
 
 .button-primery {
@@ -194,11 +205,22 @@ img {
   line-height: 1.28;
   letter-spacing: -0.03em;
   color: var(--c-primery-light);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-left: auto;
 }
 
 .hero-scroll:hover,
 .hero-scroll:focus {
   color: var(--c-brand);
+}
+
+.hero-scroll img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: var(--c-primery-light);
 }
 
 /* Section Adventages */
