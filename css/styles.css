@@ -67,7 +67,7 @@ img {
 .sellers-section,
 .love-section,
 .acquaintance-section {
-  margin: 32px 100px;
+  margin: 0 100px 0;
 }
 
 /* Header */
@@ -227,7 +227,8 @@ img {
 
 .adventages-section {
   background-color: var(--c-background);
-  padding: 50px 0;
+  padding: 50px;
+  margin-bottom: 128px;
 }
 
 .visually-hidden {
@@ -253,7 +254,13 @@ img {
 
 .adventages-list {
   display: flex;
+  gap: 70px;
   justify-content: space-between;
+}
+
+.adventages-item:not(:last-child) {
+  padding-right: 18px;
+  border-right: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 .adventages-list-title {
@@ -271,6 +278,10 @@ img {
 }
 
 /* Section Taste */
+
+.taste-section {
+  margin-bottom: 128px;
+}
 
 .taste-title {
   font-size: 24px;
@@ -295,11 +306,8 @@ img {
 
 .taste-list {
   display: flex;
-  justify-content: space-between;
-}
-
-.taste-list li {
-  padding: 28px 36px 28px 28px;
+  gap: 19px;
+  flex-wrap: wrap;
 }
 
 .taste-list img {
@@ -312,22 +320,29 @@ img {
   text-transform: uppercase;
 }
 
-.taste-item-milk-choco {
+.taste-item {
+  flex-basis: calc((100% - 57px) / 4);
+}
+
+.milk-choco {
   border-radius: 15px;
   color: var(--c-primery-light);
   background-color: var(--c-brand);
+  padding: 28px;
 }
 
-.taste-item-milk,
-.taste-item-sweet-choco {
+.milk,
+.sweet-choco {
   border-radius: 15px;
   border: 1px solid var(--c-brand);
+  padding: 28px;
 }
 
-.taste-item-nuts {
+.nuts {
   border-radius: 15px;
   color: var(--c-primery-light);
   background-color: var(--c-primery);
+  padding: 28px;
 }
 
 /* Section Made */
@@ -335,6 +350,7 @@ img {
 .made-section {
   display: flex;
   justify-content: center;
+  padding-bottom: 128px;
 }
 
 .made-title {
@@ -344,18 +360,36 @@ img {
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
-  margin: 0 auto 50px;
+  padding-bottom: 50px;
 }
 
 .made-span {
   color: var(--c-brand);
 }
 
-.background-for-button {
-  background-image: url(../images/made-pic.jpg);
-  background-size: 600px 400px;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+.video-inner {
+  display: flex;
+  gap: 20px;
+}
+
+.video-media {
+  flex-basis: calc((100% - 20px) / 2);
+  /* background-color: var(--c-background); */
+  /* background-image: url(../images/made-pic.jpg); */
+  /* background-size: 600px 400px; */
+  /* background-repeat: no-repeat; */
+  /* background-position: 50% 50%; */
+}
+
+.video-background {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.video-content {
+  padding: 32px;
+  flex-basis: calc((100% - 20px) / 2);
 }
 
 .made-text {
@@ -366,7 +400,7 @@ img {
 }
 
 .made-list {
-  list-style-type: disc;
+  /* list-style-type: disc; */
 }
 
 .made-item {
