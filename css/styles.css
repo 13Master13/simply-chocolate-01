@@ -18,9 +18,9 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  letter-spacing: -0.02em;
   color: var(--c-primery);
   background-color: var(--c-background-light);
+  max-width: 1200px;
 }
 
 ul,
@@ -50,7 +50,6 @@ h6 {
 
 img {
   display: block;
-  max-width: 100%;
   height: auto;
 }
 
@@ -67,13 +66,13 @@ img {
 .sellers-section,
 .love-section,
 .acquaintance-section {
-  margin: 0 100px 0;
+  /* margin: 0 100px 0; */
 }
 
 /* Header */
 
 .header {
-  padding-bottom: 8px;
+  padding-bottom: 6px;
 }
 
 .header-inner {
@@ -117,7 +116,7 @@ img {
 
 .nav-link {
   display: inline-block;
-  padding: 24px 0;
+  padding: 29px 0;
   font-weight: 500;
   line-height: 1.14;
   color: var(--c-primery);
@@ -139,7 +138,7 @@ img {
 }
 
 .hero-inner {
-  padding: 380px 40px 40px;
+  padding: 382px 40px 40px;
   border-radius: 30px;
   background-color: var(--c-background);
   /* background-image: url(../images/chocolate-main-pic.jpg); */
@@ -154,15 +153,14 @@ img {
   line-height: 1.21;
   letter-spacing: -0.03em;
   color: var(--c-primery-light);
-  margin-bottom: 32px;
-  margin-left: 40px;
+  margin-bottom: 30px;
   max-width: 484px;
 }
 
 .hero-action {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 15px;
 }
 
 .button-primery {
@@ -173,8 +171,7 @@ img {
   cursor: pointer;
   border-radius: 100px;
   padding: 14px 40px;
-  line-height: 1.21;
-  margin-left: 40px;
+  line-height: normal;
 }
 
 .button-primery:hover,
@@ -186,11 +183,11 @@ img {
 .button-secondary {
   font-weight: 600;
   color: var(--c-primery-light);
-  padding: 14px 40px;
+  padding: 12px 40px;
   border: 1px solid var(--c-primery-light);
   cursor: pointer;
   border-radius: 100px;
-  line-height: 1.28;
+  line-height: normal;
 }
 
 .button-secondary:hover,
@@ -227,8 +224,8 @@ img {
 
 .adventages-section {
   background-color: var(--c-background);
-  padding: 50px;
-  margin-bottom: 128px;
+  padding: 50px 0;
+  margin-bottom: 129px;
 }
 
 .visually-hidden {
@@ -247,7 +244,7 @@ img {
 .adventages-icon {
   width: 32px;
   height: 32px;
-  margin-bottom: 22px;
+  margin-bottom: 52px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
 }
@@ -256,6 +253,8 @@ img {
   display: flex;
   gap: 70px;
   justify-content: space-between;
+  padding: 0 18px;
+  margin-bottom: 1px;
 }
 
 .adventages-item:not(:last-child) {
@@ -268,7 +267,8 @@ img {
   font-weight: 600;
   line-height: 1.21;
   color: var(--c-primery-light);
-  margin-bottom: 18px;
+  line-height: normal;
+  margin-bottom: 19px;
 }
 
 .adventages-item-text {
@@ -291,7 +291,7 @@ img {
   text-transform: uppercase;
   text-align: center;
   max-width: 411px;
-  margin: 0 auto 28px;
+  margin: 0 auto 27px;
 }
 
 .span-title {
@@ -299,6 +299,8 @@ img {
 }
 
 .taste-text {
+  line-height: 1.29;
+  letter-spacing: -0.02em;
   text-align: center;
   max-width: 486px;
   margin: 0 auto 50px;
@@ -311,13 +313,7 @@ img {
 }
 
 .taste-list img {
-  margin-bottom: 36px;
-}
-
-.taste-list h3 {
-  font-weight: 600;
-  line-height: 1.28;
-  text-transform: uppercase;
+  margin-bottom: 37px;
 }
 
 .taste-item {
@@ -345,12 +341,25 @@ img {
   padding: 28px;
 }
 
+.taste-item-title:nth-child(odd) {
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.taste-item-title:nth-child(even) {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
 /* Section Made */
 
 .made-section {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 128px;
+  padding-bottom: 108px;
 }
 
 .made-title {
@@ -360,7 +369,7 @@ img {
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 49px;
 }
 
 .made-span {
@@ -397,13 +406,16 @@ img {
   font-weight: 600;
   line-height: 1.33;
   margin-bottom: 28px;
+  max-width: 350px;
 }
 
 .made-list {
-  /* list-style-type: disc; */
+  list-style-type: disc;
+  max-width: 436px;
 }
 
 .made-item {
+  margin-left: 17px;
   margin-bottom: 24px;
 }
 
@@ -423,8 +435,33 @@ img {
   color: var(--c-brand);
 }
 
+.products-list {
+  margin-bottom: 173px;
+}
+
+.products-inner {
+  display: flex;
+  gap: 18px;
+}
+
 .products-item {
   background-color: var(--c-primery-light);
+  width: 270px;
+  height: 364px;
+  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  padding: 32px 20px 40px;
+  flex-basis: calc((100% - 54px) / 3);
+}
+
+.products-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products-img {
+  margin-bottom: 7px;
 }
 
 .products-item-title {
@@ -432,12 +469,14 @@ img {
   font-weight: 600;
   line-height: 1.33;
   text-transform: uppercase;
+  margin-bottom: 1px;
 }
 
 .products-item-text {
   color: rgba(17, 17, 17, 0.7);
   font-size: 12px;
   line-height: 1.17;
+  margin-bottom: 18px;
 }
 
 .button-products {
@@ -447,10 +486,13 @@ img {
   border: 1px solid rgba(17, 17, 17, 0.1);
   cursor: pointer;
   border-radius: 100px;
-  line-height: 1.28;
 }
 
 /* Section Sellers */
+
+.sellers-section {
+  margin-bottom: 128px;
+}
 
 .sellers-title {
   font-size: 24px;
@@ -459,14 +501,51 @@ img {
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
-  margin: 0 auto 50px;
+  margin: 0 auto 49px;
 }
 
 .sellers-span {
   color: var(--c-brand);
 }
 
+.sellers-list {
+  display: flex;
+  gap: 16px;
+}
+
+.sellers-item {
+  margin-bottom: 33px;
+  flex-basis: calc((100% - 32px) / 3);
+}
+
+.sellers-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.sellers-text {
+  line-height: 1.28;
+  max-width: 403px;
+}
+
+.button-sellers {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--c-primery-light);
+  background-color: var(--c-brand);
+  border: none;
+  cursor: pointer;
+  border-radius: 100px;
+  padding: 14px 40px;
+  line-height: normal;
+}
+
 /* Section Love */
+
+.love-section {
+  margin-bottom: 125px;
+}
 
 .love-tille {
   font-size: 24px;
@@ -475,21 +554,53 @@ img {
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
-  margin: 0 auto 50px;
+  margin: 0 auto 47px;
 }
 
 .love-span {
   color: var(--c-brand);
 }
 
+.love-list {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 75px;
+}
+
+.love-item {
+  flex-basis: calc((100% - 56px) / 3);
+}
+
+.love-people {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 24px 42px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  /* flex-shrink: 1; */
+  /* flex-grow: 0; */
+}
+
+.love-people img {
+  margin-bottom: 19px;
+}
+
+.love-text {
+}
+
 .love-item-title {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.33;
+  text-align: center;
+  margin-bottom: 24px;
 }
 
 .love-item-text {
   color: rgba(17, 17, 17, 0.7);
+  text-align: center;
+  line-height: 1.28;
 }
 
 .button-third {
@@ -501,6 +612,8 @@ img {
   border-radius: 100px;
   padding: 14px 40px;
   line-height: 1.28;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button-third:hover,
@@ -512,22 +625,49 @@ img {
 /* Section Acquaintance */
 
 .acquaintance-section {
-  background: url(../images/subcribe.jpg);
+  background-color: #555;
+  height: 370px;
+  /* background: url(../images/subcribe.jpg); */
+}
+
+.acquaintance-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 72px 335px;
 }
 
 .acquaintance-title {
   color: var(--c-primery-light);
-  background-color: var(--c-primery);
+  /* background-color: var(--c-primery); */
   font-size: 24px;
   font-weight: 600;
   line-height: 1.17;
   letter-spacing: -0.03em;
   text-transform: uppercase;
+  align-items: center;
+  max-width: 378px;
+  margin-bottom: 24px;
 }
 
 .acquaintance-text {
   color: var(--c-primery-light);
-  background-color: var(--c-primery);
+  line-height: 1.28;
+  margin-bottom: 24px;
+  /* background-color: var(--c-primery); */
+}
+
+.button-acquaintance {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--c-primery-light);
+  background-color: var(--c-brand);
+  border: none;
+  cursor: pointer;
+  border-radius: 100px;
+  padding: 14px 40px;
+  line-height: normal;
 }
 
 /* Footer */
